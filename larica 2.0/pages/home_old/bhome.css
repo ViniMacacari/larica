@@ -1,0 +1,168 @@
+/*
+    
+    Equipe: Lucas Aguiar Maioli de Carvalho, Thiago Rizzato e Vinícius Macacari de Almeida
+
+*/
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('../../fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+    /* adicione outros formatos de arquivo, se necessário */
+
+}
+
+@font-face {
+  font-family: 'Whyte';
+  src: url('../../fonts/Whyte-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Whyte Bold';
+    src: url('../../fonts/Whyte-Super.ttf') format('truetype');
+  }
+
+/* Scroll */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #fce48a;
+    z-index: 0;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(119, 119, 119);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+/* Scroll */
+
+body{
+    margin: 0px;
+    overflow-x: hidden;
+ }
+
+/* Início div-topo */
+
+.div-topo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    font-family: 'Whyte Bold';
+    font-size: clamp(5em, 8vw, 8vw);
+    margin-top: 1vw;
+    margin-bottom: 1%;
+}
+
+.subtitulo {
+    font-family: 'Whyte';
+    font-size: clamp(1em, 1.5vw, 1.5vw);
+}
+
+.div-but-topo{
+    margin-bottom: 11vw;
+}
+
+.button-propries {
+    box-sizing: border-box;
+
+    font-family: 'Whyte';
+    font-size: clamp(1.2em, 1.7vw, 1.7vw);
+
+    width: clamp(5.2em, 11.5vw, 11.5vw);
+    height: clamp(2em, 3.5vw, 3.5vw);
+    margin: 10px;
+    cursor: pointer;
+
+    background: #FFFFFF;
+    border: 0.2vw solid #000000;
+    box-shadow: 0.1vw 0.1vw 0px #000000;
+    border-radius: 100px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.button-propries:hover{
+    transform: scale(1.1);
+}
+
+.button-navegar{
+    color: white;
+    background-color: #FF7527;
+}
+
+.div-meio{
+    width: 100%;
+    height: auto;
+
+    display: flex; /* Exibição em bloco */
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #E9C132;
+}
+
+.textos-meio, .chat-meio {
+    display: flex;
+    flex-direction: column;
+    float: left; /* Flutua a div para a esquerda ou direita */
+    width: 50%; /* Largura de 50% da div pai */
+    box-sizing: border-box; /* Inclui a largura da borda e preenchimento no cálculo da largura total */  
+}
+
+.textos-meio{
+    align-items: center;
+}
+
+.titulo-meio{
+    font-family: 'Whyte Bold';
+    display: flex;
+    width: clamp(3em, 8.5em, 8.5em);
+}
+
+.paragrafo-meio{
+    font-family: 'Whyte';
+    display: flex;
+    width: 23em;
+}
+
+.titulo-meio, .paragrafo-meio{
+    position: relative;
+}
+
+
+.chat-meio {
+    transform: scale(0.55);
+}
+
+@media (max-width: 768px) {
+    .textos-meio, .chat-meio {
+        display: flex;
+        float: left; /* Flutua a div para a esquerda ou direita */
+        width: 50%; /* Largura de 50% da div pai */
+        box-sizing: border-box; /* Inclui a largura da borda e preenchimento no cálculo da largura total */  
+    }
+    .div-meio{
+        width: 100%;
+        height: auto;
+    
+        display: flex; /* Exibição em bloco */
+        flex-direction: column;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+    
+        background-color: #E9C132;
+    }
+  }
+
+/* Continue daqui */

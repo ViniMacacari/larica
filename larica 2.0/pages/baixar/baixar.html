@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Larica - Baixar</title>
+    <script src="../baixar/baixar.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="../../pages/baixar/baixar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../imgs/favicon.png">
+  </head>
+  <body>
+    <div class="cabecalho">
+      <div id="gambiarra">
+        <h1 id="larica">Larica</h1>
+      </div>
+      <div id="hero">
+        <a href="../home/home.html" class="a-menu a-anim">Home</a>
+        <a href="../navegar/navegar.html" class="a-menu a-anim">Navegar</a>
+        <a href="../equipe/equipe.html" class="a-menu a-anim">Equipe</a>
+        <a href="../portifolio/portifolio.html" class="a-menu a-anim">Portfólio</a>
+      </div>
+    </div>
+    <div class="medium baixo">
+      <div class="download">
+        <h1 class="tittle" id="baixe-aqui">Baixe aqui!</h1>
+        <button class="bdonwload windows button-anim" id="baixar-windows"><img src="../../imgs/windows.svg" alt="windows" class="icon windows-icon">Baixar para Windows</button>
+        <button class="bdonwload android button-anim"><img src="../../imgs/android.svg" alt="android" class="icon android-icon">Baixar para Android</button>
+      </div>
+      <div class="login baixo" id="login-div">
+        <h1 class="tittle" id="login">Login</h1>
+        <input type="email" class="input e-mail" placeholder="Digite seu e-mail" id="input-email-ver">
+        <input type="password" autocomplete="new-password" class="input senha" placeholder="Digite sua senha" id="input-senha-ver">
+        <button class="button-anim enter" id="botao-entrar">Entrar</button>
+        <a class="signup-red">Não tem uma conta?</a>
+        <button class="signup button-anim-" id="inscrever-se">Inscrever-se</button>
+      </div>
+      <div class="signup-div baixo" id="signup-div">
+        <h1 class="tittle" id="login">Inscrever-se</h1>
+        <input type="text" class="input nome nome-signup" placeholder="Digite seu nome completo">
+        <input type="email" class="input e-mail e-mail-signup" placeholder="Digite seu e-mail">
+        <input type="password" autocomplete="new-password" class="input senha senha-input" placeholder="Digite sua senha">
+        <div class="checkbox-wrapper-63">
+          <div class="checkbox-wrapper-24 aceitar-termos">
+            <input type="checkbox" id="check-24" name="check" value="" />
+            <label for="check-24">
+              <span><!-- This span is needed to create the "checkbox" element --></span>Aceitar termos
+            </label>
+          </div>
+        </div>
+        <button class="button-anim enter">Criar</button>
+        <a class="signup-red">Já tem uma conta?</a>
+        <button class="signup button-anim- button-voltar-login" id="ja-tem-conta">Entre aqui</button>
+      </div>
+      <div id="cadastrado" class="cadastrado baixo">
+        <img src="../../imgs/donwload-disponivel.png" alt="Donwload Disponível" class="donwload-disponivel">
+        <h1 class="cadastrado-h1">Você já está cadastrado!</h1>
+      </div>
+    </div>
+    <dialog id="dialog-download" class="dialog-popup">
+        <img src="../../imgs/bolinhas.svg" alt="design" class="bolinhas">
+      <div class="center-popup">
+        <div class="align-aviso">
+          <p class="aviso-popup">Ops! Parece que você não tem uma conta!</p>
+          <button class="fechar-popup button-anim" id="close-popup">Fechar</button>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>
+
+<!--
+
+  Equipe: Lucas Aguiar Maioli de Carvalho, Thiago Rizzato e Vinícius Macacari de Almeida
+
+  GitHub: https://github.com/ViniMacacari/VisualClass-PI
+
+-->

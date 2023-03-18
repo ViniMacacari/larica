@@ -1,0 +1,675 @@
+/*
+    
+    Equipe: Lucas Aguiar Maioli de Carvalho, Thiago Rizzato e Vinícius Macacari de Almeida
+
+*/
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('../../fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+    /* adicione outros formatos de arquivo, se necessário */
+
+}
+
+@font-face {
+  font-family: 'Whyte';
+  src: url('../../fonts/Whyte-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Whyte Bold';
+    src: url('../../fonts/Whyte-Super.ttf') format('truetype');
+  }
+
+/* Scroll */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #fce48a;
+    z-index: 0;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(119, 119, 119);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+/* Scroll */
+
+body{
+    margin: 0px;
+    zoom: 125%;
+    max-zoom: 130%;
+    overflow-x: hidden;
+ }
+
+/* Início div top */
+
+.div-top {
+    z-index: 1;
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    margin-bottom: 10%;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.titulo{
+    margin-top: 1%;
+    margin-bottom: 1.8%;
+    scale: 60%;
+}
+
+.titulo-home{
+position: absolute;
+width: 595.62px;
+height: 130.26px;
+left: 662px;
+top: 69.04px;
+text-align: center;
+
+background: #000000;
+}
+
+.p-top {
+    font-family: 'Whyte';
+    font-style: normal;
+    font-size: 20px;
+    margin: 7px;
+    margin-bottom: 20px;
+    text-align: center;
+    
+    color: #000000;
+}
+
+button#baixar {
+    box-sizing: border-box;
+    
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    box-shadow: 2px 2px 0px #000000;
+    border-radius: 100px;
+    
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    /* or 58px */
+    
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 45px; padding-right: 45px;
+    
+    transition: transform 0.2s; /* tempo de duração da animação */
+    margin-right: 5px;
+}
+
+button#navegar {
+box-sizing: border-box;
+
+color: white;
+background-color: #FF7527;
+border: 2px solid #000000;
+box-shadow: 2px 2px 0px #000000;
+border-radius: 100px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+/* or 58px */
+
+padding-top: 5px;
+padding-bottom: 5px;
+padding-left: 37px; padding-right: 37px;
+
+transition: transform 0.2s; /* tempo de duração da animação */
+margin-left: 5px;
+}
+
+.button-top:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.button-top:active{
+    transform: translateY(5px);
+}
+
+/* Início div top */
+
+/* Início div medium */
+.div-medium {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    background-color: #E9C132;
+}
+
+.div-medium-into {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    background-color: #E9C132;
+}
+
+.div-into-medium-into{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+p#p-medium-into{
+font-family: 'Whyte Bold';
+font-style: normal;
+width: 250px;
+height: 67px;
+font-size: 28px;
+line-height: 100%;
+/* or 47px */
+color: #1E1E1E;
+margin-bottom: 130px;
+}
+
+p#paragrafo2{
+    position: relative;
+    left: 19.9%;
+    font-family: 'Whyte';
+    font-style: normal;
+    width: 415px;
+    height: 67px;
+    font-size: 18px;
+    line-height: 100%;
+}
+
+.chat-ia-svg{
+    scale: 60%;
+    left: 60px;
+}
+
+p#paragrafo2, p#p-medium-into, .chat-ia-svg {
+    position: relative;
+    bottom: 40px;
+}
+
+p#paragrafo2, p#p-medium-into {
+    bottom: 50px;
+}
+
+/* Fim div medium */ 
+
+/* Inicio div botmed */ 
+
+.div-botmed {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    background-color: #E9C132;
+}
+
+.init-hidden {
+    opacity: 0;
+    transition: opacity 1s linear
+}
+
+.init-hidden-off {
+    opacity: 1;
+}
+
+.animated-div {
+    transform: translateX(-20%);
+    animation: slide-in 0.7s ease-in-out forwards;
+}
+
+@keyframes slide-in {
+    0%{
+        transform: translateX(-20%);
+    }
+    
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+.div-botmed-into {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+}
+
+.div-into-botmed-into{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+p#p-medium-into2{
+font-family: 'Whyte Bold';
+font-style: normal;
+top: -19%;
+width: 255px;
+height: 64px;
+font-size: 21px;
+line-height: 100%;
+/* or 47px */
+color: #1E1E1E;
+margin-bottom: 130px;
+left: -11.9%;
+}
+
+p#med-bot-paragrafo2{
+    position: relative;
+    bottom: 90px;
+    font-family: 'Whyte';
+    font-style: normal;
+    width: 335px;
+    height: 64px;
+    font-size: 15px;
+    line-height: 100%;
+}
+
+.nav-svg{
+    scale: 77%;
+    left: -1.4%;
+}
+
+p#med-bot-paragrafo2, p#p-medium-into2, .nav-svg {
+    position: relative;
+    bottom: 50px;
+}
+
+p#med-bot-paragrafo2, p#p-medium-into2 {
+    line-height: 1.9;
+}
+
+p#med-bot-paragrafo2 {
+    bottom: +160px;
+}
+
+/* Fim div botmed */ 
+
+/* Começo div semi-fim */
+
+.semi-fim {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* para alinhar os itens verticalmente */
+    padding-bottom: 110px;
+    background-color: #F2F2F2;
+}
+
+.init-hidden-opacidade {
+    opacity: 0;
+    transition: opacity 1s linear
+}
+
+.init-hidden-opacidade-off {
+    opacity: 1;
+}
+
+.mensagem {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto; /* para centralizar a div horizontalmente */
+}
+
+h1#mensagem-fim{
+    font-family: 'Whyte Bold';
+    font-style: normal;
+    font-size: 45px;
+}
+
+.semi-fim-explore{
+    position: relative;
+    top: -40px;
+}
+
+img#estrela1{
+    scale: 0.7;
+    position: absolute;
+    margin-top: -1%;
+    left: 70%;
+}
+
+.explore-mais{
+    scale: 0.65;
+    display: flex;
+    align-items: center; /* Alinha verticalmente o conteúdo da classe */
+    justify-content: center; /* Alinha horizontalmente o conteúdo da classe */
+}
+
+img#estrela2{
+    scale: 0.6;
+    position: absolute;
+    margin-top: -15%;
+    left: 3.5%;
+}
+
+.button-fim {
+    box-sizing: border-box;
+
+    color: white;
+    border: 2px solid #000000;
+    box-shadow: 2px 2px 0px #000000;
+    border-radius: 100px;
+    
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    /* or 58px */
+    
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 44px; padding-right: 44px;
+    
+    transition: transform 0.2s; /* tempo de duração da animação */
+    margin-left: 15px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    position: absolute; /* Define a posição como absoluta */
+    top: 105%; /* Posiciona a div no centro vertical da div pai */
+    left: 48%; /* Posiciona a div no centro horizontal da div pai */
+    transform: translate(-50%, -50%); /* Centraliza a div vertical e horizontalmente */
+}
+
+button#esquerda-fim {
+    background-color: #FF7527;
+}
+
+button#direita-fim {
+    background-color: #ffffff;
+    color: #000000;
+    padding-left: 32px; padding-right: 32px;
+}
+
+.button-fim:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.button-fim:active{
+    transform: translateY(5px);
+}
+
+img#estrela3 {
+    position: absolute;
+    scale: 0.6;
+    left: 80%;
+}
+
+/* Fim div semi-fim */
+
+/* Inicio div end */
+
+.end {
+    position: relative;
+    width: auto;
+    padding: 20px;
+    display: flex;
+    background-color: #E9C132;
+}
+
+.init-hidden-cima {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    opacity: 0;
+    transition: opacity 1s linear;
+    background-color: #555;
+}
+
+.init-hidden-cima-off {
+    opacity: 1;
+}
+
+.animated-div2 {
+    transform: translateX(5%);
+    animation: slide-in2 0.7s ease-in-out forwards;
+}
+
+@keyframes slide-in2 {
+    0%{
+        transform: translateY(5%);
+    }
+    
+    100%{
+        transform: translateY(-13%);
+    }
+}
+
+.end-larica {
+    position: relative;
+    scale: 0.2;
+    top: -50px;
+    left: -170px;
+}
+
+.end-line {
+    scale: 0.475;
+    position: absolute;
+    left: 76px; /* altere o valor para mover a imagem para a esquerda */
+    top: 180px; /* altere o valor para mover a imagem para baixo */
+    transform: translate(-50%, -50%);
+}
+
+.text-end {
+    position: absolute;
+    left: 214px; /* altere o valor para mover a imagem para a esquerda */
+    top: 130px; /* altere o valor para mover a imagem para baixo */
+    transform: translate(-50%, -50%);
+    width: 250px;
+    line-height: 1.5;
+    word-spacing: 2px;
+
+    font-family: 'Whyte';
+
+}
+
+.button-end {
+    box-sizing: border-box;
+    scale: 0.8;
+
+    color: white;
+    border: 2px solid #000000;
+    box-shadow: 2px 2px 0px #000000;
+    border-radius: 100px;
+    
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    /* or 58px */
+    
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 32px; padding-right: 32px;
+    
+    transition: transform 0.2s; /* tempo de duração da animação */
+    margin-left: 15px;
+}
+
+button#esquerda-end {
+    background-color: #FF7527;
+
+    position: relative; /* torna a imagem posicionável em relação à posição original */
+    left: -556px; /* move a imagem 20 pixels para a esquerda */
+    top: 180px; /* move a imagem 10 pixels para baixo */
+}
+
+button#direita-end {
+    background-color: #ffffff;
+    color: #000000;
+    padding-left: 42px; padding-right: 42px;
+
+    position: relative; /* torna a imagem posicionável em relação à posição original */
+    left: -590px; /* move a imagem 20 pixels para a esquerda */
+    top: 180px; /* move a imagem 10 pixels para baixo */
+}
+
+.button-end:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.button-end:active{
+    transform: translateY(5px);
+}
+
+.div-button-end {
+    /* background-color: #E9C132; */
+    background-color: #FF0000;
+    height: 240px;
+    width: 100%;
+}
+
+.end-unifil {
+    font-family: 'Whyte';
+    width: 100%;
+    position: relative;
+    left: -860px;
+    top: 225px;
+    text-decoration: none;
+    color: #000000;
+}
+ 
+/* Fim div end */
+
+/* PopUp */
+
+/* PopUp Donwload indisponível */
+
+.dialog-popup {
+    box-sizing: border-box;
+  
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    box-shadow: 3px 3px 0px 3px #000000;
+    border-radius: 20px;
+  
+    align-items: center;
+    justify-content: center;
+  
+    height: 50vh;
+    width: 28vw;
+
+    transition: 0.5s;
+
+    overflow: hidden;
+  }
+  
+  .center-popup {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+  
+    width: 100%;
+    height: 75%;
+  }
+  
+  .bolinhas{
+    scale: 0.7;
+    height: 6%;
+  }
+  
+  .align-aviso {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+    margin-top: 5%;
+  }
+  
+  .aviso-popup{
+    font-family: 'Whyte';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.7vh;
+    line-height: 135.4%;
+    width: 20vw;
+  
+    text-align: center;
+  
+    color: #000000;
+  }
+  
+  .fechar-popup {
+    box-sizing: border-box;
+  
+    font-family: 'Whyte';
+    font-style: normal;
+    font-size: 2.5vw;
+  
+    text-align: center;
+  
+    width: 20vh;
+    height: 3.5vw;
+  
+    color: white;
+    background: #FF0000;
+    border: 3px solid #000000;
+    box-shadow: 3px 3px 0px #000000;
+    border-radius: 146px;
+  }
+  
+  /* Estilização fundo/animação/etc popup */
+  
+  dialog::backdrop {
+    background-color: #555;
+    opacity: 0.5;
+  }
+
+  .button-anim {
+    transition: transform 0.1s;
+    user-select: none;
+}
+
+.button-anim:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.button-anim:active{
+    transform: translateY(5px);
+}

@@ -1,0 +1,180 @@
+/*
+    
+    Equipe: Lucas Aguiar Maioli de Carvalho, Thiago Rizzato e Vinícius Macacari de Almeida
+
+*/
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('../../fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+    /* adicione outros formatos de arquivo, se necessário */
+
+}
+
+@font-face {
+  font-family: 'Whyte';
+  src: url('../../fonts/Whyte-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Whyte Bold';
+    src: url('../../fonts/Whyte-Super.ttf') format('truetype');
+  }
+
+/* Scroll */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #fce48a;
+    z-index: 0;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(119, 119, 119);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+/* Scroll */
+
+body {
+    margin: 0; /* remove as margens padrão do corpo */
+  }
+
+/* Início div-top */
+
+.div-top {
+    display: flex;
+    justify-content: center; /* centraliza os itens horizontalmente */
+    align-items: center; /* centraliza os itens verticalmente */
+    height: auto; /* altura da div container */
+    width: 100%;
+}
+
+h1#tittle {
+    font-family: 'Whyte Bold';
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Fim div-top */
+
+/* Início div-medium */
+
+.div-medium {
+    background-color: #E9C132;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column; /* define a direção da flexão como coluna */
+    justify-content: start; /* centraliza os itens horizontalmente */
+    align-items: start; /* centraliza os itens verticalmente */
+}
+
+.div-developers {
+    display: flex; /* define o display como flex */
+    justify-content: space-between; /* espaça os itens horizontalmente */
+    position: relative;
+    left: 150px;
+}
+
+.div-dev-img {
+    scale: 0.7;
+}
+
+h2 {
+    position: relative;
+    font-family: 'Whyte Bold';
+    font-style: normal;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+p {
+    position: relative;
+    font-family: 'Whyte';
+    font-style: normal;
+    line-height: 0.5;
+    margin-bottom: 40px;
+}
+
+
+a {
+    position: relative;
+    font-family: 'Whyte';
+    font-style: normal;
+}
+
+/* Fim div-medium */
+
+/* Início div-bottom */
+
+.div-bottom {
+    display: flex;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.voltar-inicio{
+    box-sizing: border-box;
+
+    color: white;
+    background-color: #FF7527;
+    border: 2px solid #000000;
+    box-shadow: 2px 2px 0px #000000;
+    border-radius: 100px;
+    text-decoration: none;
+    
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    /* or 58px */
+    
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 37px; padding-right: 37px;
+    
+    transition: transform 0.2s; /* tempo de duração da animação */
+}
+
+.voltar-inicio:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.voltar-inicio:active{
+    transform: translateY(5px);
+}
+
+/* Fim div-bottom */
+
+/* Animação passar o mouse */
+
+.anim {
+    transition: transform 0.2s ease;
+}
+
+.anim:hover {
+    transform: translateX(10px);
+}
+
+/* Animação passar o mouse */
+
+/* mailto */
+
+.e-mail {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* mailto */

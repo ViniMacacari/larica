@@ -1,0 +1,218 @@
+/*
+    
+    Equipe: Lucas Aguiar Maioli de Carvalho, Thiago Rizzato e Vinícius Macacari de Almeida
+
+*/
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('../../fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+    /* adicione outros formatos de arquivo, se necessário */
+
+}
+
+@font-face {
+  font-family: 'Whyte';
+  src: url('../../fonts/Whyte-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Whyte Light';
+    src: url('../../fonts/Whyte-Light.ttf') format('truetype');
+  }
+
+@font-face {
+    font-family: 'Whyte Bold';
+    src: url('../../fonts/Whyte-Super.ttf') format('truetype');
+  }
+
+/* Scroll */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #fce48a;
+    z-index: 0;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(119, 119, 119);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+/* Scroll */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+
+/* Início cabecalho */
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 8%;
+    z-index: 9999;
+    position: fixed;
+}
+
+h1#larica {
+    color: white;
+    font-family: 'Whyte Bold';
+    font-style: normal;
+    text-align: start;
+
+    position: relative;
+    text-indent: 30%;
+}
+
+div#hero {
+    display: flex;
+    position: relative;
+    align-items: end;
+    justify-content: end;
+    width: 100%;
+    right: 2%;
+    color: #fce48a;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Whyte';
+    font-style: normal;
+    color: white;
+    margin: 10px;
+}
+
+.a-anim {
+    transition: transform 0.1s; /* tempo de duração da animação */
+}
+
+.a-anim {
+    transition: transform 0.1s; /* tempo de duração da animação */
+}
+
+.a-anim:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: #FF7527;
+}
+
+.a-anim:active{
+    transform: translateY(2px);
+}
+
+/* Div Content */
+
+.div-content{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #E9C132;
+}
+
+.colunas{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.semestres{
+  margin: 10vh;
+  transition: 0.1s;
+}
+
+.pointer:hover{
+  transform: scale(1.1);
+}
+
+.pointer {
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.img-semestre{
+  width: 20vw;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Caixa de Donwload */
+
+.caixa-baixar {
+  box-sizing: border-box;
+
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  box-shadow: 3px 3px 0px 3px #000000;
+  border-radius: 20px;
+
+  height: 50vh;
+  width: 28vw;
+
+  transition: 0.1s;
+
+  overflow: hidden;
+}
+
+.bolinhas{
+  scale: 0.7;
+  height: 6%;
+
+  cursor: pointer;
+}
+
+.semestres-baixar{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 100%;
+  height: 75%;
+
+}
+
+.text-bim {
+  font-family: 'Whyte';
+}
+
+.button-baixar-bim {
+  font-family: 'Whyte';
+  font-style: normal;
+  font-size: 3vh;
+  border: 2px solid #000000;
+  box-shadow: 1px 1px 0px 1px #000000;
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: #FF7527;
+  padding: 5px;
+  color: white;
+  transition: 0.1s;
+
+  cursor: pointer;
+
+  width: 20vw;
+  height: auto;
+}
+
+button:focus { outline: none; }
+
+.button-baixar-bim:hover {
+  transform: scale(1.1);
+}

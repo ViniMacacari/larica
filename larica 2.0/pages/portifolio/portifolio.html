@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Larica - Portfólio</title>
+    <script src="../portifolio/portifolio.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="../../pages/portifolio/portifolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../imgs/favicon.png">
+  </head>
+  <body>
+    <header>
+      <div class="cabecalho">
+        <div id="gambiarra">
+          <h1 id="larica">Larica</h1>
+        </div>
+        <div id="hero">
+          <a href="../home/home.html" class="a-menu a-anim">Home</a>
+          <a href="../baixar/baixar.html" class="a-menu a-anim">Baixar</a>
+          <a href="../navegar/navegar.html" class="a-menu a-anim">Navegar</a>
+          <a href="../equipe/equipe.html" class="a-menu a-anim">Equipe</a>
+        </div>
+      </div>
+  </header>
+    <!-- ARRUMAR QUANDO APRENDER MAIS, COMO NO EXEMPLO DO FIGMA -->
+    <div class="div-content">
+      <div class="colunas coluna1">
+        <div class="semestres semestre1">
+          <img src="../../imgs/semestres/Semestre 1.png" alt="semestre um" class="img-semestre s1 pointer">
+          <!-- Dialogo -->
+          <dialog id="dialog-download" class="caixa-baixar b1-2">
+            <img src="../../imgs/bolinhas.svg" alt="design" class="bolinhas close">
+            <div class="semestres-baixar">
+                <div class="baixar-s1">
+                  <p class="text-bim">1º Bimestre</p>
+                  <button class="button-baixar-bim" onclick="window.open('../../archives/portifolio/bimestre1/1 Bimestre.pdf', '_blank');">Baixar</button>
+                  <p class="text-bim">2º Bimestre</p>
+                  <button class="button-baixar-bim" onclick="donwloadZipBim2()">Baixar</button>
+                </div>
+            </div>
+          </dialog>
+          <!-- Dialogo -->
+        </div>
+        <div class="semestres semestre2">
+          <img src="../../imgs/semestres/Semestre 2.png" alt="semestre dois" class="img-semestre s2 pointer" id="semestre2">
+          <!-- Dialogo -->
+          <dialog id="dialog-download2" class="caixa-baixar b3-4">
+            <img src="../../imgs/bolinhas.svg" alt="design" id="close-dialogS2" class="bolinhas close">
+            <div class="semestres-baixar">
+              <div class="baixar-s1">
+                <p class="text-bim">3º Bimestre</p>
+                <button class="button-baixar-bim" onclick="window.open('../../archives/portifolio/bimestre3/3 Bimestre.pdf', '_blank');">Baixar</button>
+                <p class="text-bim">4º Bimestre</p>
+                <button class="button-baixar-bim">Baixar</button>
+              </div>
+            </div>
+          </dialog>
+          <!-- Dialogo -->
+        </div>
+        <div class="semestres semestre3">
+          <img src="../../imgs/semestres/Semestre 3.png" alt="semestre tres" class="img-semestre s3">
+        </div>
+      </div>
+      <div class="colunas coluna2">
+        <div class="semestres semestre4">
+          <img src="../../imgs/semestres/Semestre 4.png" alt="semestre quartro" class="img-semestre s4">
+        </div>
+        <div class="semestres semestre5">
+          <img src="../../imgs/semestres/Semestre 5.png" alt="semestre quinto" class="img-semestre s5">
+        </div>
+        <div class="semestres semestre6">
+          <img src="../../imgs/semestres/Semestre 6.png" alt="semestre sexto" class="img-semestre s6">
+        </div>
+      </div>
+      <div class="colunas coluna3">
+        <div class="semestres semestre7">
+          <img src="../../imgs/semestres/Semestre 7.png" alt="semestre setimo" class="img-semestre s7">
+        </div>
+        <div class="semestres semestre8">
+          <img src="../../imgs/semestres/Semestre 8.png" alt="semestre oitavo" class="img-semestre s8">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!--
+
+  Equipe: Lucas Aguiar Maioli de Carvalho, Thiago Rizzato e Vinícius Macacari de Almeida
+
+  GitHub: https://github.com/ViniMacacari/VisualClass-PI
+
+-->
