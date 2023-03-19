@@ -1,0 +1,136 @@
+/*
+    
+    Equipe: Lucas Aguiar Maioli de Carvalho, Thiago Rizzato e Vinícius Macacari de Almeida
+
+*/
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('../../fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+    /* adicione outros formatos de arquivo, se necessário */
+
+}
+
+@font-face {
+  font-family: 'Whyte';
+  src: url('../../fonts/Whyte-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Whyte Bold';
+    src: url('../../fonts/Whyte-Super.ttf') format('truetype');
+  }
+
+/* Scroll */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #fce48a;
+    z-index: 0;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(119, 119, 119);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+/* Scroll */
+
+body{
+    margin: 0px;
+    zoom: 125%;
+    max-zoom: 130%;
+    overflow-x: hidden;
+    margin-top: 20px;
+ }
+
+/* Início div top */
+
+.div-top{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.titulo{
+    width: 25vw;
+}
+
+.p-top{
+    font-family: 'Whyte';
+    margin: 5px;
+}
+
+button#navegar {
+box-sizing: border-box;
+
+color: white;
+background-color: #FF7527;
+border: 2px solid #000000;
+box-shadow: 2px 2px 0px #000000;
+border-radius: 100px;
+
+font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+/* or 58px */
+
+padding-top: 5px;
+padding-bottom: 5px;
+padding-left: 37px; padding-right: 37px;
+
+transition: transform 0.2s; /* tempo de duração da animação */
+margin-left: 5px;
+}
+
+.button-top:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.button-top:active{
+    transform: translateY(5px);
+}
+
+.med{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #E9C132;
+}
+
+.chat-item{
+    margin: 15px;
+    width: 30vw;
+}
+
+.desc{
+    font-family: 'Whyte Bold';
+    font-size: 4vw;
+    text-align: center;
+}
+
+.paragrafo{
+    font-family: 'Whyte';
+    text-align: center;
+}
+
+.fim{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.unifil{
+    width: 10vw;
+}
