@@ -655,3 +655,7 @@ button#direita-end {
 .button-anim:active{
     transform: translateY(5px);
 }
+
+@media (max-width: 1280px) {
+    
+}
