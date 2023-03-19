@@ -188,6 +188,7 @@ line-height: 100%;
 /* or 47px */
 color: #1E1E1E;
 margin-bottom: 130px;
+box-sizing: border-box;
 }
 
 p#paragrafo2{
@@ -199,11 +200,13 @@ p#paragrafo2{
     height: 67px;
     font-size: 18px;
     line-height: 100%;
+    box-sizing: border-box;
 }
 
 .chat-ia-svg{
     scale: 60%;
     left: 60px;
+    box-sizing: border-box;
 }
 
 p#paragrafo2, p#p-medium-into, .chat-ia-svg {
@@ -447,12 +450,12 @@ img#estrela3 {
 }
 
 .init-hidden-cima {
-    position: relative;
     padding: 20px;
     display: flex;
+    flex-direction: column;
     opacity: 0;
     transition: opacity 1s linear;
-    background-color: #555;
+    margin-left: 6%;
 }
 
 .init-hidden-cima-off {
@@ -466,82 +469,69 @@ img#estrela3 {
 
 @keyframes slide-in2 {
     0%{
-        transform: translateY(5%);
+        transform: translateY(13%);
     }
     
     100%{
-        transform: translateY(-13%);
+        transform: translateY(0%);
     }
 }
 
 .end-larica {
     position: relative;
-    scale: 0.2;
-    top: -50px;
-    left: -170px;
+    width: 20%;
 }
 
 .end-line {
-    scale: 0.475;
-    position: absolute;
-    left: 76px; /* altere o valor para mover a imagem para a esquerda */
-    top: 180px; /* altere o valor para mover a imagem para baixo */
-    transform: translate(-50%, -50%);
+    width: 39%;
 }
 
 .text-end {
-    position: absolute;
-    left: 214px; /* altere o valor para mover a imagem para a esquerda */
-    top: 130px; /* altere o valor para mover a imagem para baixo */
-    transform: translate(-50%, -50%);
-    width: 250px;
+    position: relative;
     line-height: 1.5;
     word-spacing: 2px;
 
     font-family: 'Whyte';
-
 }
 
 .button-end {
     box-sizing: border-box;
-    scale: 0.8;
 
     color: white;
-    border: 2px solid #000000;
-    box-shadow: 2px 2px 0px #000000;
+    border: 1px solid #000000;
+    box-shadow: 1px 1px 1px #000000;
     border-radius: 100px;
     
     font-family: 'Plus Jakarta Sans';
-    font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-style: normal;
+    font-size: 15px;
     line-height: 30px;
+    text-align: center;
     /* or 58px */
-    
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 32px; padding-right: 32px;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 22px; padding-right: 22px;
     
     transition: transform 0.2s; /* tempo de duração da animação */
-    margin-left: 15px;
 }
 
 button#esquerda-end {
     background-color: #FF7527;
 
-    position: relative; /* torna a imagem posicionável em relação à posição original */
-    left: -556px; /* move a imagem 20 pixels para a esquerda */
-    top: 180px; /* move a imagem 10 pixels para baixo */
+    position: relative;
 }
 
 button#direita-end {
     background-color: #ffffff;
     color: #000000;
-    padding-left: 42px; padding-right: 42px;
+    padding-left: 31px; padding-right: 31px;
+    margin-left: 10px;
 
-    position: relative; /* torna a imagem posicionável em relação à posição original */
-    left: -590px; /* move a imagem 20 pixels para a esquerda */
-    top: 180px; /* move a imagem 10 pixels para baixo */
+    position: relative;
 }
 
 .button-end:hover {
@@ -554,18 +544,13 @@ button#direita-end {
 }
 
 .div-button-end {
-    /* background-color: #E9C132; */
-    background-color: #FF0000;
-    height: 240px;
-    width: 100%;
+    background-color: #E9C132;
 }
 
 .end-unifil {
     font-family: 'Whyte';
     width: 100%;
     position: relative;
-    left: -860px;
-    top: 225px;
     text-decoration: none;
     color: #000000;
 }
@@ -672,4 +657,8 @@ button#direita-end {
 
 .button-anim:active{
     transform: translateY(5px);
+}
+
+@media (max-width: 1280px) {
+    
 }

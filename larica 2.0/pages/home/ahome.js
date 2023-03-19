@@ -117,10 +117,3 @@ document.addEventListener('DOMContentLoaded', function() {
   })
   
   // PopUp Donwnload indisponível
-
-
-// AVISOS DE TAMANHO DE TELA -- REMOVER QUANDO DEIXAR A PÁGINA RESPONSIVA //
-
-
-
-// AVISOS DE TAMANHO DE TELA -- REMOVER QUANDO DEIXAR A PÁGINA RESPONSIVA //

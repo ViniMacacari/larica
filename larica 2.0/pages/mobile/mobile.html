@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile</title>
     <link rel="stylesheet" href="mobile.css">
+    <script src="../mobile/mobile.js" defer></script>
 </head>
 <body>
     <header>
@@ -13,7 +14,7 @@
             <img src="../../imgs/logos/larica-svg.svg" alt="larica" class="titulo">
             <p class="p-top">"Ajudar o usuário a encontrar uma receita fácil e prática"</p>
             <div>
-            <button class="button-top" id="navegar" onclick="window.location.href='../../pages/navegar/navegar.html'">Baixar</button>
+            <button class="button-top" id="navegar">Baixar</button>
             </div>
         </div>
     </header>
@@ -24,7 +25,17 @@
     </div>
     <div class="fim">
         <img class="unifil" src="../../imgs/unifil.svg">
-        <p class="paragrafo">Unifil, 2023</p>
+        <p class="paragrafo">Unifil, 2022-2023</p>
     </div>
+    <!--Dialogo-->
+    <dialog id="dialog-download" class="dialog-popup">
+      <img src="../../imgs/bolinhas.svg" alt="design" class="bolinhas">
+      <div class="center-popup">
+        <div class="align-aviso">
+          <p class="aviso-popup">Calma lá Chef! Em breve estará disponível.</p>
+          <button class="fechar-popup button-anim" id="close-popup">Fechar</button>
+        </div>
+      </div>
+    </dialog>
 </body>
 </html>

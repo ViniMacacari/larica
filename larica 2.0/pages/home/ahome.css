@@ -188,6 +188,7 @@ line-height: 100%;
 /* or 47px */
 color: #1E1E1E;
 margin-bottom: 130px;
+box-sizing: border-box;
 }
 
 p#paragrafo2{
@@ -199,11 +200,13 @@ p#paragrafo2{
     height: 67px;
     font-size: 18px;
     line-height: 100%;
+    box-sizing: border-box;
 }
 
 .chat-ia-svg{
     scale: 60%;
     left: 60px;
+    box-sizing: border-box;
 }
 
 p#paragrafo2, p#p-medium-into, .chat-ia-svg {
@@ -656,6 +659,20 @@ button#direita-end {
     transform: translateY(5px);
 }
 
-@media (max-width: 1280px) {
-    
-}
+@media screen and (max-width: 1280px) {
+    body {
+      zoom: 90%;
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    body {
+      zoom: 70%;
+    }
+  }
+
+  @media screen and (max-width: 600px){
+    body {
+      zoom: 50%;
+    }
+  }
