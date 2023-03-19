@@ -63,6 +63,7 @@ body{
 .p-top{
     font-family: 'Whyte';
     margin: 5px;
+    line-height: 1.5;
 }
 
 button#navegar {
@@ -116,11 +117,13 @@ margin-left: 5px;
     font-family: 'Whyte Bold';
     font-size: 4vw;
     text-align: center;
+    line-height: 1.5;
 }
 
 .paragrafo{
     font-family: 'Whyte';
     text-align: center;
+    line-height: 1.5;
 }
 
 .fim{
