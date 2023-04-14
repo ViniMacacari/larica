@@ -168,17 +168,27 @@ h1#baixe-aqui {
 }
 
 .android-icon {
-    scale: 0.6;
+  width: 10%;
+  margin-bottom: 3px;
+  margin-right: 12px;
+}
+
+.windows-icon{
+  width: 13%;
+  height: auto;
 }
 
 .windows {
     background: white;
+    width: 20vw;
+    height: 3vw;
+    font-size: 1.3vw;
 }
 
 .android {
-    padding-right: 13.5px;
-    padding-left: 13.5px;
-    font-size: 2.75vh;
+    width: 20vw;
+    height: 3vw;
+    font-size: 1.3vw;
     background: #FF7527;
     color: white;
 }

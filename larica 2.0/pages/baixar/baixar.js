@@ -94,6 +94,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // PopUp Donwnload indisponível
 
+document.addEventListener('DOMContentLoaded', function() {
+  const buttonMac = document.querySelector("#baixar-mac")
+  const modalMac = document.querySelector("#dialog-mac")
+  const buttonCloseMac = document.querySelector('#close-popupMac')
+
+  buttonMac.onclick = function () {
+    // Remover esse "if" depois caso necessário e mantenha o modal.showModal()
+    if (donwloadLiberado === 1) {
+      modalMac.showModal()
+    } else {
+      modalMac.showModal()
+    }
+  }
+
+  // Fechar popup
+
+  buttonCloseMac.onclick = function () {
+    modalMac.close()
+  }
+
+})
+
 // Verificar tipo de dispositivo
 
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {

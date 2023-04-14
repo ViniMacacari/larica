@@ -364,13 +364,20 @@ img#estrela1{
     position: absolute;
     margin-top: -1%;
     left: 70%;
+    animation: pulse1 2s infinite;
 }
 
-.explore-mais{
-    scale: 0.65;
-    display: flex;
-    align-items: center; /* Alinha verticalmente o conteúdo da classe */
-    justify-content: center; /* Alinha horizontalmente o conteúdo da classe */
+@keyframes pulse1 {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.3);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+    }
 }
 
 img#estrela2{
@@ -378,6 +385,47 @@ img#estrela2{
     position: absolute;
     margin-top: -15%;
     left: 3.5%;
+    animation: pulse2 3s infinite;
+}
+
+@keyframes pulse2 {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.3);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+img#estrela3 {
+    position: absolute;
+    scale: 0.6;
+    left: 80%;
+    animation: pulse3 1.5s infinite;
+}
+
+@keyframes pulse3 {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.3);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+.explore-mais{
+    scale: 0.65;
+    display: flex;
+    align-items: center; /* Alinha verticalmente o conteúdo da classe */
+    justify-content: center; /* Alinha horizontalmente o conteúdo da classe */
 }
 
 .button-fim {
@@ -429,12 +477,6 @@ button#direita-fim {
 
 .button-fim:active{
     transform: translateY(5px);
-}
-
-img#estrela3 {
-    position: absolute;
-    scale: 0.6;
-    left: 80%;
 }
 
 /* Fim div semi-fim */
