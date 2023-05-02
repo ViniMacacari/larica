@@ -1,9 +1,5 @@
 {
-  "cleanUrls": true,
   "rewrites": [
     { "source": "/(.*)", "destination": "/pages/$1" }
-  ],
-  "routes": [
-    { "src": "/pagina", "dest": "/pages/home/home.html" }
   ]
 }
