@@ -1,14 +1,9 @@
 {
-  "cleanUrls": true,
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/pages/$1" }
-  ],
-  "routes": [
-    { "src": "/home", "dest": "/pages/home/home.html" },
+  "redirects": [
     {
-      "src": "/pages/home/home.html",
-      "status": 301,
-      "headers": { "Location": "/home" }
+      "source": "/home",
+      "destination": "/pages/home/home.html",
+      "statusCode": 301
     }
   ]
 }
