@@ -1,5 +1,14 @@
 {
+  "cleanUrls": true,
   "rewrites": [
     { "source": "/(.*)", "destination": "/pages/$1" }
+  ],
+  "routes": [
+    { "src": "/home", "dest": "/pages/home/home.html" },
+    {
+      "src": "/pages/home/home.html",
+      "status": 301,
+      "headers": { "Location": "/home" }
+    }
   ]
 }
